@@ -234,7 +234,7 @@ if __name__ == "__main__":
 
     if _has_wandb:
         wandb.init(
-            project="TrainYourOwnYOLO", config=vars(FLAGS), sync_tensorboard=False
+            project="", config=vars(FLAGS), sync_tensorboard=False
         )
         wandb_callback = WandbCallback(save_model=False)
         frozen_callbacks.append(wandb_callback)
